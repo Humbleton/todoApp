@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+    color: hsl(0, 0%, 100%);
+    font-family: monospace;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.275rem;
+}
+header,form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 0;
+    background: hsl(0, 0%, 100%);
+}
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+form button:hover {
+    background: #d88771;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.added-items {
+    min-width: 30%;
+    list-style: none;
+}
+.to-do {
+    margin: .5rem;
+    background: white;
+    color: black;
+    font-size: 1.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease;
+}
+.to-do li {
+    flex: 1;
+}
+
+.btn-complete, .btn-delete {
+    background: #ff6f47;
+    color: white;
+    border: 0;
+    padding: .725rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-complete {
+    background: rgb(73, 204, 73);
+}
+.todo-item {
+    padding: 0 0.925rem;
+}
+.fa-trash-can,
+.fa-check {
+    pointer-events: none;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: .575;
+}
+
+/* FILTER SELECT */
+select {
+    appearance: none;
+    outline: none;
+    border: 0;
+}
+
+/* DIV SELECT */
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1.257rem;
+}
+.select::after {
+    content: "\f063";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1.257rem;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+.select:hover::after {
+    background: white;
+    color: #ff6f47;
+}

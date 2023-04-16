@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aabbe0df8c.js" crossorigin="anonymous"></script>
+    <title>TO-DO App</title>
+</head>
+<body>
+    <header>
+        <h1>TO-DO App</h1>
+
+    </header>
+    <form>
+        <input class="add-text" type="text" placeholder="Enter To-Do">
+        <button class="add-button" type="submit"><i class="fa-solid fa-square-plus"></i></button>
+        <div class="select">
+            <select name="completed_todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+
+    </form>
+   
+    <div class="todo-container">
+        <ul class="added-items"></ul>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
